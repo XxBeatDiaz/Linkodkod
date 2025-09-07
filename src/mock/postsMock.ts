@@ -1,5 +1,6 @@
-import type { PostType } from '../types/type';
+import type { PostType } from '../types/postType';
 
+//Fake posts 
 export const posts = [
     {
         "id":1,

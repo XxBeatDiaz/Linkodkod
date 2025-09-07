@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.slogen {
+    width: 80%;
+    text-align: center;
+    font-size: 200%;
+}
+
+.logo {
+  width: 10%;
+  height: 100%;
+}

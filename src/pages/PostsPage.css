@@ -1,0 +1,7 @@
+.posts {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    width: 90%;
+    gap: 7px;
+}
