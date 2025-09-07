@@ -1,13 +1,8 @@
 import "./Post.css";
+import { type PostType } from "../types/type";
 
-type Props = {
-    img: string,
-    description: string,
-    authorName: string,
-    timeStemp: string
-}
 
-export default function Post({img, description, authorName, timeStemp} : Props) {
+export default function Post({img, description, authorName, timeStemp} : PostType) {
   return (
     <div className="post">
         <div className="topPost">
