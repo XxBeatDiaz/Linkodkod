@@ -1,6 +1,6 @@
 import "./PostsPage.css";
 import Post from "../components/Post";
-import { type PostType } from "../types/type";
+import { type PostType } from "../types/postType";
 
 type Posts = {
   posts: PostType[];

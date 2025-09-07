@@ -1,5 +1,5 @@
 import "./Post.css";
-import { type PostType } from "../types/type";
+import { type PostType } from "../types/postType";
 
 
 export default function Post({img, description, authorName, timeStemp} : PostType) {

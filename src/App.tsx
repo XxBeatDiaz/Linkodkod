@@ -1,11 +1,14 @@
 import "./App.css";
+import Layout from "./sections/Layout";
 import PostsPage from "./pages/PostsPage";
-import { posts } from "./mock/posts";
+import { posts } from "./mock/postsMock";
 
 function App() {
   return (
     <div className="app">
-      <PostsPage posts={posts}></PostsPage>
+      <Layout>
+        <PostsPage posts={posts}></PostsPage>
+      </Layout>
     </div>
   );
 }
