@@ -6,3 +6,7 @@ export type PostType = {
   timeStemp: string;
   children: React.ReactNode;
 };
+
+export type Posts = {
+  posts: PostType[];
+};

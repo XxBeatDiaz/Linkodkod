@@ -1,16 +1,26 @@
 import "./PostsPage.css";
+import { fetchAction } from "../api/posts.api";
+import { fakePosts } from "../mock/postsMock.ts";
 import Post from "../components/Post";
-import { type PostType } from "../types/postType";
+import type { PostType } from "../types/postType";
+import { useEffect, useState } from "react";
 
-type Posts = {
-  posts: PostType[];
-};
+export default function PostsPage() {
+  const [posts, setPosts] = useState<PostType[]>(fakePosts);
 
-export default function PostsPage({ posts }: Posts) {
+  function fetchAllPosts() {
+    fetchAction("posts", setPosts);
+  }
+
+  useEffect(() => {
+    fetchAllPosts();
+  }, []);
+
   return (
     <div className="posts">
       {posts.map((p) => (
-        <Post key={p.id}
+        <Post
+          key={p.id}
           img={p.img}
           description={p.description}
           authorName={p.authorName}
