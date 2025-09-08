@@ -1,17 +1,21 @@
 header {
+  position: fixed;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: 10%;
+  background-color: burlywood;
 }
 
 .slogen {
     width: 80%;
-    text-align: center;
     font-size: 200%;
+    text-align: center;
+    padding-left: 7%;
 }
 
 .logo {
-  width: 10%;
+  width: 7%;
   height: 100%;
 }

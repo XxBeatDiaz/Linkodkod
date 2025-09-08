@@ -5,7 +5,7 @@ export const posts = [
     {
         "id":1,
         "img": "../public/post.png",
-        "description": "bibi sachi",
+        "description": "bibi sachi ksdfjdslkjfwefjlkwjf ekfweljflke fwelfkwj elfkjewf wlekjf ewflkewjf enc,msd ncsm,dncs dmc,snc sdmnc mdsncmdnc dmnc dmnc sjdhc kdsjhc kwjc kdhcs kjhc skjchs c",
         "authorName": "avi",
         "timeStemp": "09/04/20"
     },

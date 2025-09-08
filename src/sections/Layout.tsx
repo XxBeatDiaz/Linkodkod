@@ -1,18 +1,17 @@
 import Header from "./Header";
 import Footer from "./Footer";
-import { logo, slogen } from "../mock/headerMock";
+import "./Layout.css";
 
 type Main = {
-    children: React.ReactNode
-} 
+  children: React.ReactNode;
+};
 
-export default function layout({children}: Main) {
+export default function layout({ children }: Main) {
   return (
     <div className="layout">
-        {/* {need to use "useContext" in header (props)"} */}
-        <Header slogen={slogen} logo={logo}></Header>
-        <main>{children}</main>
-        <Footer></Footer>
+      <Header></Header>
+      <main>{children}</main>
+      <Footer></Footer>
     </div>
-  )
+  );
 }
