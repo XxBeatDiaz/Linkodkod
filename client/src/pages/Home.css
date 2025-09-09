@@ -1,0 +1,11 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainImg {
+    width: 80vw;
+    height: 100vh;
+    border: 3px solid black;
+}

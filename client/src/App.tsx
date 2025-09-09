@@ -1,12 +1,12 @@
 import "./App.css";
+import Router from "./routes/Router";
 import Layout from "./sections/Layout";
-import PostsPage from "./pages/PostsPage";
 
 function App() {
   return (
     <div className="app">
       <Layout>
-        <PostsPage ></PostsPage>
+        <Router></Router>
       </Layout>
     </div>
   );

@@ -1,0 +1,18 @@
+.navBar {
+    display: flex;
+    padding: 0.4% 0;
+    width: 100%;
+    background-color: rgba(106, 106, 241, 0.708);
+}
+
+.linkBtn {
+    padding: 0.3% 3%;
+    margin: 0 2%;
+    border: 1px solid gray;
+    border-radius: 7px;
+    background-color: rgb(196, 189, 154);
+}
+
+.homeBtn:hover {
+    background-color: rgba(198, 172, 123, 0.772);
+}

@@ -1,8 +1,9 @@
 .layout {
     display: flex;
     flex-direction: column;
+    background-color: rgb(104, 217, 255);
 }
 
 main {
-    margin-top: 14%;
+    margin-top: 12%;
 }
