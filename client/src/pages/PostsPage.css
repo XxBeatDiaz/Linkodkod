@@ -5,3 +5,20 @@
     width: 90%;
     gap: 17px;
 }
+
+.addPostBtn {
+    text-align: center;
+    padding: 0.2% 0;
+    border: 1px solid black;
+    border-radius: 7px;
+    background-color: rgba(115, 188, 99, 0.582);
+}
+
+.addPostBtn:hover {
+    background-color: rgba(212, 221, 110, 0.808);
+}
+
+.errorMsg {
+    text-align: center;
+    font-size: 3rem;
+}

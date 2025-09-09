@@ -4,9 +4,9 @@ export type PostType = {
   description: string;
   authorName: string;
   timeStemp: string;
+  countLikes: number;
+  countDisLikes: number;
   children: React.ReactNode;
 };
 
-export type Posts = {
-  posts: PostType[];
-};
+export type Posts = PostType[] | undefined;

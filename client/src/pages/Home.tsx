@@ -1,10 +1,9 @@
-import { Link } from "react-router"
+import "./Home.css";
 
 export default function Home() {
   return (
-    <div>
-        <h1>Home</h1>
-        <Link to="/Posts">Posts</Link>
+    <div className="home">
+      <img className="mainImg" src="/homeImg.jpg" alt="home img" />
     </div>
-  )
+  );
 }
