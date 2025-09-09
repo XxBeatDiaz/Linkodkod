@@ -13,8 +13,8 @@ export async function readDBFile(path){
 // Writes content to the posts database file
 export async function writeDBFile(path, content) {
     try {
-        await fsProms.writeFile(path, content)
+        await fsProms.writeFile(path, JSON.stringify(content, null, 2))
     } catch (error) {
-        console.log(`Error: ${error}`);
+        console.log(`Error (from 'fs.js'): ${error}`);
     }
 }

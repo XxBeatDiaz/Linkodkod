@@ -1,39 +1,65 @@
-
 [
-    {
-        "id":1,
-        "img": "../post.png",
-        "description": "bibi sachi ksdfjdslkjfwefjlkwjf ekfweljflke fwelfkwj elfkjewf wlekjf ewflkewjf enc,msd ncsm,dncs dmc,snc sdmnc mdsncmdnc dmnc dmnc sjdhc kdsjhc kwjc kdhcs kjhc skjchs c",
-        "authorName": "avi",
-        "timeStemp": "09/04/20",
-        "countLikes": 200,
-        "countDisLikes": 79
-    },
-    {
-        "id":2,
-        "img": "../post1.png",
-        "description": "bibi sachi2",
-        "authorName": "yoni",
-        "timeStemp": "09/04/20",
-        "countLikes": 20,
-        "countDisLikes": 4
-    },
-    {
-        "id":3,
-        "img": "../post2.png",
-        "description": "bibi sachi3",
-        "authorName": "mali",
-        "timeStemp": "09/04/20",
-        "countLikes": 47,
-        "countDisLikes": 200
-    },
-    {
-        "id":4,
-        "img": "../post.png",
-        "description": "bibi sachi4",
-        "authorName": "tami",
-        "timeStemp": "09/04/20",
-        "countLikes": 0,
-        "countDisLikes": 1
-    }
+  {
+    "id": 1,
+    "img": "../post.png",
+    "description": "bibi sachi ksdfjdslkjfwefjlkwjf ekfweljflke fwelfkwj elfkjewf wlekjf ewflkewjf enc,msd ncsm,dncs dmc,snc sdmnc mdsncmdnc dmnc dmnc sjdhc kdsjhc kwjc kdhcs kjhc skjchs c",
+    "authorName": "avi",
+    "timeStemp": "09/04/20",
+    "countLikes": 200,
+    "countDisLikes": 79
+  },
+  {
+    "id": 2,
+    "img": "../post1.png",
+    "description": "bibi sachi2",
+    "authorName": "yoni",
+    "timeStemp": "09/04/20",
+    "countLikes": 20,
+    "countDisLikes": 4
+  },
+  {
+    "id": 3,
+    "img": "../post2.png",
+    "description": "bibi sachi3",
+    "authorName": "mali",
+    "timeStemp": "09/04/20",
+    "countLikes": 47,
+    "countDisLikes": 200
+  },
+  {
+    "id": 4,
+    "img": "../post.png",
+    "description": "bibi sachi4",
+    "authorName": "tami",
+    "timeStemp": "09/04/20",
+    "countLikes": 0,
+    "countDisLikes": 1
+  },
+  {
+    "id": 7,
+    "img": "/post.png",
+    "description": "Fake",
+    "authorName": "avi",
+    "timeStemp": "09/04/20",
+    "countLikes": 0,
+    "countDisLikes": 2
+  },
+  {
+    "id": 9,
+    "img": "/post.png",
+    "description": "Fake2",
+    "authorName": "avi",
+    "timeStemp": "09/04/20",
+    "countLikes": 0,
+    "countDisLikes": 2
+  },
+  {
+    "id": 9,
+    "img": "/post.png",
+    "description": "Fake2",
+    "authorName": "avi",
+    "timeStemp": "09/04/20",
+    "countLikes": 0,
+    "countDisLikes": 2
+  }
 ]

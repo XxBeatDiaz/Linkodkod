@@ -1,4 +1,4 @@
-import { getAllPosts, getPostById, creatPost } from "../db/posts.dal.js";
+import { getAllPosts, getPostById, createPost } from "../db/posts.dal.js";
 
 export async function getPosts(req, res){
     try {
@@ -29,8 +29,8 @@ export async function getOnePost(req, res) {
 export async function creatNewPost(req, res) {
     try {
         const newPost = req.body;
-        const newPosts = await creatPost(newPost);
-        return res.status(200).json(newPosts);
+        const newPosts = await createPost(newPost);
+        return res.status(200).json({msg: "successful"});
     } catch (error) {
         return res.status(500).json();
     }

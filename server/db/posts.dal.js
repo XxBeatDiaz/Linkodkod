@@ -13,9 +13,9 @@ export async function getPostById(id) {
     return post;
 }
 
-export async function creatPost(post) {
+export async function createPost(post) {
     const posts = await readDBFile(PATH);
     posts.push(post);
-    await writeDBFile(posts);
+    await writeDBFile(PATH, posts);
     return posts;
 }

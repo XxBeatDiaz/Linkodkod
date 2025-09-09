@@ -1,5 +1,5 @@
 import "./PostsPage.css";
-import { fetchAction } from "../api/posts.api";
+import { fetchActionGet } from "../api/posts.api";
 import Post from "../components/Post";
 import type { PostType, Posts } from "../types/postType";
 import { useEffect, useState } from "react";
@@ -10,7 +10,7 @@ export default function PostsPage() {
 
 
   function fetchAllPosts() {
-    fetchAction("posts", setPosts);
+    fetchActionGet("posts", setPosts);
   }
 
   function handlePosts(posts: Posts) {
