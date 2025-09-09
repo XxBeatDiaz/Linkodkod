@@ -29,9 +29,9 @@ export async function getOnePost(req, res) {
 export async function creatNewPost(req, res) {
     try {
         const newPost = req.body;
-        creatPost(newPost);
-        return res.status(200).json("nice");
-    }
+        const newPosts = await creatPost(newPost);
+        return res.status(200).json(newPosts);
     } catch (error) {
-        return
+        return res.status(500).json();
     }
+}
