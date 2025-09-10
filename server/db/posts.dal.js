@@ -9,13 +9,21 @@ export async function getAllPosts() {
 
 export async function getPostById(id) {
     const posts = await readDBFile(PATH);
-    const post = posts.filter((p) => p.id == id)
+    const [post] = posts.filter((p) => p.id === id);
+    
+    if (!post) {
+        return false;
+    }
     return post;
 }
 
 export async function createPost(post) {
     const posts = await readDBFile(PATH);
     posts.push(post);
-    await writeDBFile(PATH, posts);
-    return posts;
+    const result = await writeDBFile(PATH, posts);
+    if (!result) {
+        return;
+    }
+    const newPosts = await readDBFile(PATH);
+    return newPosts;
 }

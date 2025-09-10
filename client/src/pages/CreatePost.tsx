@@ -4,33 +4,42 @@ import type { PostType } from "../types/postType";
 import "./CreatePost.css";
 
 export default function CreatePost() {
-  const [id, setId] = useState<number>(0);
+  const [id, setId] = useState<number>();
   const [author, setAuthor] = useState<string>("");
-  const [img, setImg] = useState<string>("");
+  const [img, setImg] = useState<string>("post.png");
   const [description, setDescription] = useState<string>("");
-  const [res, setRes] = useState("");
+  const [newPost, setNewPost] = useState<PostType>()
+  const [res, setRes] = useState<string>("");
 
-  async function addPost(id: number, author: string, img: string, description: string){
-    const currentDate = new Date();
-    const formattedTime = currentDate.toLocaleTimeString();
+function createPostObj() {
+  const currentDate = new Date();
+  const formattedTime = currentDate.toLocaleTimeString();
+  
+  const postObj = {
+    id: id,
+    img: img,
+    description: description,
+    authorName: author,
+    timeStemp: formattedTime,
+    countLikes: 0,
+    countDisLikes: 0
+  } as PostType;
 
-    const newPost = {
-      id: id,
-      img: img,
-      description: description,
-      authorName: author,
-      timeStemp: formattedTime,
-      countLikes: 0,
-      countDisLikes: 0
-    } as PostType;
+  setNewPost(postObj);
+}
 
-    const isSuccess = await fetchActionPost("add-post", newPost);
+  async function addPost(newPost: PostType){
+    const isSuccess = await fetchActionPost("posts/add-post", newPost);
     setRes(isSuccess);
   }
 
   useEffect(()=> {
-    addPost()
-  }, [])
+    addPost(newPost!)
+
+    return () => {
+      
+    }
+  }, [newPost])
 
   function handleId(event: React.ChangeEvent){
     setId(event.target.value);
@@ -62,8 +71,8 @@ export default function CreatePost() {
 
       <div className="selectImg">
         <label htmlFor="selectImg">Select image: </label>
-        <select id="selectImg" name="img"  onClick={handleImg}>
-          <option selected value="post.png">post1</option>
+        <select defaultValue="post.png" id="selectImg" name="img"  onClick={handleImg}>
+          <option value="post.png">post1</option>
           <option value="post1.png">post2</option>
           <option value="post2.png">post3</option>
         </select>
@@ -76,7 +85,7 @@ export default function CreatePost() {
       </div>
 
       <div className="submitBtn">
-        <button type="submit">Send</button> 
+        <button type="submit" onClick={createPostObj}>Send</button> 
       </div>
       {res}
     </div>

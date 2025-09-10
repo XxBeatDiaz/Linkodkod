@@ -19,7 +19,7 @@ export default function PostsPage() {
       return <h1 className="errorMsg">None posts found</h1>
     }
 
-    return posts?.map((p: PostType) => (
+    return posts.map((p: PostType) => (
         <Post 
           key={p.id}
           img={p.img}
