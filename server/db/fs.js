@@ -16,5 +16,7 @@ export async function writeDBFile(path, content) {
         await fsProms.writeFile(path, JSON.stringify(content, null, 2))
     } catch (error) {
         console.log(`Error (from 'fs.js'): ${error}`);
+        return false;
     }
+    return true;
 }

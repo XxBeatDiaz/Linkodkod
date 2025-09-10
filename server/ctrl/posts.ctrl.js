@@ -30,7 +30,10 @@ export async function creatNewPost(req, res) {
     try {
         const newPost = req.body;
         const newPosts = await createPost(newPost);
-        return res.status(200).json({msg: "successful"});
+        if (!newPosts) {
+            return res.status(404).json();
+        }
+        return res.status(200).json({msg: "successful", result: newPosts});
     } catch (error) {
         return res.status(500).json();
     }
