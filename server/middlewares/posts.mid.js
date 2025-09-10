@@ -1,4 +1,4 @@
-import { getPostById, getAllPosts } from "../db/posts.dal.js";
+import { getPostById } from "../db/posts.dal.js";
 
 export async function isPostExists(req, res, next) {
     try {

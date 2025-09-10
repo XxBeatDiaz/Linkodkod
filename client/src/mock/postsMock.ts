@@ -1,9 +1,9 @@
-import type { PostType } from '../types/postType';
+import type { Posts } from '../types/postType';
 
 //Fake posts 
 export const fakePosts = [
     {
-        "id": 1,
+        "id": "1",
         "img": "/post.png",
         "description": "Fake",
         "authorName": "avi",
@@ -11,4 +11,4 @@ export const fakePosts = [
         "countLikes": 0,
         "countDisLikes": 2
     }
-] as PostType[];
+] as Posts;
