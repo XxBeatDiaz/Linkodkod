@@ -36,74 +36,21 @@
     "countDisLikes": 1
   },
   {
-    "id": "7",
-    "img": "/post.png",
-    "description": "Fake",
-    "authorName": "avi",
-    "timeStemp": "09/04/20",
-    "countLikes": 0,
-    "countDisLikes": 2
-  },
-  {
-    "id": "9",
-    "img": "/post.png",
-    "description": "Fake2",
-    "authorName": "avi",
-    "timeStemp": "09/04/20",
-    "countLikes": 0,
-    "countDisLikes": 2
-  },
-  {
-    "id": "20",
-    "img": "post.png",
-    "description": "aaaa",
-    "authorName": "mery",
-    "timeStemp": "10:17:21",
+    "id": "5",
+    "img": "../post1.png",
+    "description": "code is fun",
+    "authorName": "david",
+    "timeStemp": "16:53:55",
     "countLikes": 0,
     "countDisLikes": 0
   },
   {
-    "id": "21",
-    "img": "post.png",
-    "description": "zxc",
-    "authorName": "semi",
-    "timeStemp": "10:34:40",
-    "countLikes": 0,
-    "countDisLikes": 0
-  },
-  {
-    "id": "22",
-    "img": "post.png",
-    "description": "zzz",
-    "authorName": "as",
-    "timeStemp": "10:42:37",
-    "countLikes": 0,
-    "countDisLikes": 0
-  },
-  {
-    "id": "24",
-    "img": "post.png",
-    "description": "zxc",
-    "authorName": "zxc",
-    "timeStemp": "10:52:46",
-    "countLikes": 0,
-    "countDisLikes": 0
-  },
-  {
-    "id": "14",
-    "img": "post.png",
-    "description": "",
-    "authorName": "",
-    "timeStemp": "12:10:22",
-    "countLikes": 0,
-    "countDisLikes": 0
-  },
-  {
-    "id": "27",
-    "img": "post.png",
-    "description": "",
-    "authorName": "",
-    "timeStemp": "12:22:26",
+    "id": "6",
+    "authorName": "yosi",
+    "description": "fake post six",
+    "img": "../post.png",
+    "content": "contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent",
+    "timeStemp": "17:11:14",
     "countLikes": 0,
     "countDisLikes": 0
   }

@@ -1,5 +1,6 @@
 import type { PostType } from "../types/postType";
 
+//A function that accepts EndPoint and SetState and defines a new State after fetching.
 export async function fetchActionGet(endPoint = "", setFunc?: any) {
     try {
         const response = await fetch(`http://localhost:3000/${endPoint}`);
@@ -10,6 +11,7 @@ export async function fetchActionGet(endPoint = "", setFunc?: any) {
     }
 }
 
+//A function that accepts EndPoint and Post and send to backand
 export async function fetchActionPost(endPoint = "", post: PostType) {
     if (!post) {
         return false;
@@ -22,23 +24,6 @@ export async function fetchActionPost(endPoint = "", post: PostType) {
         body: JSON.stringify(post),
     });
 
-    const result = await response.json();
-    return result.msg;
-}
-
-export async function fetchActionPut(endPoint = "", value: string) {
-    if (!value) {
-        return false;
-    }
-
-    const response = await fetch(`http://localhost:3000/${endPoint}`, {
-        method: 'PUT',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({value}),
-    });
-    
     const result = await response.json();
     return result.msg;
 }

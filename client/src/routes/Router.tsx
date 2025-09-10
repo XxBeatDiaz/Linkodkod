@@ -3,14 +3,17 @@ import PostsPage from "../pages/PostsPage";
 import Home from "../pages/Home";
 import CreatePost from "../pages/CreatePost";
 import NotFoundPage from "../pages/NotFoundPage";
+import PostPage from "../pages/PostPage";
 
 export default function Router() {
   return (
     <div>
       <Routes>
+        <Route path="/" element={<Home/>} />
         <Route path="/Home" element={<Home/>} />
         <Route path="/Posts" element={<PostsPage />} />
         <Route path="/AddPost" element={<CreatePost/>}/>
+        <Route path="PostPage/:id" element={<PostPage/>}/>
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>

@@ -13,6 +13,7 @@ export async function getPosts(req, res){
 }
 
 export async function getOnePost(req, res) {
+    
     try {
         const id = req.params.id;
         const post = await getPostById(id);

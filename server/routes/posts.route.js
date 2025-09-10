@@ -6,6 +6,6 @@ const postsRoutes = express.Router();
 
 postsRoutes.get('/', getPosts);
 postsRoutes.get('/:id', getOnePost);
-postsRoutes.post('/add-post', await isPostExists, creatNewPost);
+postsRoutes.post('/add-post', isPostExists, creatNewPost);
 
 export default postsRoutes;

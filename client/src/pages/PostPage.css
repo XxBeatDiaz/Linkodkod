@@ -1,0 +1,33 @@
+.postPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.postImg {
+  width: 20%;
+  height: 20%;
+  border-radius: 7px;
+}
+
+.content {
+  padding: 2%;
+  overflow-wrap: break-word;
+  font-size: 200%;
+  color: rgb(254, 240, 255);
+  width: 80%;
+  height: 20rem;
+  background-color: rgb(6, 133, 137);
+}
+
+.bottomPage {
+  padding: 0 2%;
+  width: 80%;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  background-color: crimson;
+}

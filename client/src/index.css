@@ -9,10 +9,15 @@ body {
   height: 100vh;
 }
 
-h1, p {
+h1,
+p {
   margin: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+p {
+  overflow-wrap: break-word; /* Allows breaking within words if necessary */
 }
